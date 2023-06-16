@@ -5,6 +5,7 @@ conditions for a given location and time. With the use of
 weather data and algorithms, it is possible to predict
 weather conditions for the next n number of days.
 # CODE:
+```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -51,7 +52,7 @@ model.fit(forecast_data)
 forecasts = model.make_future_dataframe(periods=365)
 predictions = model.predict(forecasts)
 plot_plotly(model, predictions)
-
+```
 # OUTPUT:
 ![image](https://github.com/VaishaliBalamurugan22008813/Mini-Project/assets/119390134/711e27d9-
 e8c0-4bc4-99ba-48ed863e02cd)
